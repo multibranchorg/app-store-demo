@@ -45,7 +45,7 @@ pipeline {
             
           },
           "final": {
-            echo 'fdsfds'
+            echo 'fdsfdswoo'
             
           }
         )
