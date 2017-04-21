@@ -46,6 +46,7 @@ pipeline {
           },
           "final": {
             echo 'fdsf223'
+            sh 'gfdsgfdsgfd'
             
           }
         )
