@@ -52,6 +52,9 @@ pipeline {
       }
     }
   }
+  environment {
+    faux = 'credentials(\'boo\')'
+  }
   post {
     always {
       junit '**/target/surefire-reports/TEST-*.xml'
