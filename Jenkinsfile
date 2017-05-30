@@ -40,7 +40,7 @@ pipeline {
     stage('Deploy') {
       steps {
         sh '''#mvn source:jar package -Dmaven.test.skip
-echo yolo3'''
+echo yolo4'''
       }
     }
   }
