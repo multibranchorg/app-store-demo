@@ -26,8 +26,7 @@ pipeline {
           },
           "Internet Explorer": {
             sh 'echo \'setting up selenium environment\''
-            sh 'ping -c 4 localhost'
-            
+            sh 'ping -c 4 localhost'            
           }
         )
       }
