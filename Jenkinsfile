@@ -31,7 +31,7 @@ pipeline {
           }
         )
       }
-    }
+    } 
     stage('Static Analysis') {
       steps {
         sh 'mvn findbugs:findbugs'
