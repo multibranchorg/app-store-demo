@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'echo $PATH'
         sh 'mvn clean source:jar package'
       }
     }
