@@ -1,5 +1,6 @@
+ // @Image(public.ecr.aws/c9b9x5s7/codeship-jenkinsfile-step)          
 pipeline {
-  agent any
+  agent { docker { image "maven:3.6.3-adoptopenjdk-8" } } 
   stages {
     stage('Build') {
       steps {
@@ -11,22 +12,18 @@ pipeline {
         parallel(
           "Firefox": {
             sh 'echo \'setting up selenium environment\''
-            sh 'ping -c 5 localhost'
             
           },
           "Safari": {
             sh 'echo \'setting up selenium environment\''
-            sh 'ping -c 8 localhost'
             
           },
           "Chrome": {
             sh 'echo \'setting up selenium environment\''
-            sh 'ping -c 3 localhost'
             
           },
           "Internet Explorer": {
             sh 'echo \'setting up selenium environment\''
-            sh 'ping -c 4 localhost'
             
           }
         )
