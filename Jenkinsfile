@@ -1,6 +1,6 @@
  // @Image(cloudbees/codeship-jenkinsfile-step:latest)          
 pipeline {
-  agent { docker { image "maven" } } 
+  agent { docker { image "maven:3.6.3-adoptopenjdk-8" } } 
   stages {
     stage('Build') {
       steps {
