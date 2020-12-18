@@ -1,5 +1,6 @@
+ // @Image(cloudbees/codeship-jenkinsfile-step:base-devel)          
 pipeline {
-  agent any
+  agent { docker { image "maven" } } 
   stages {
     stage('Build') {
       steps {
